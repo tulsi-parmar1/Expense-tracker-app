@@ -53,16 +53,6 @@ const IncomeExpenseSlice=createSlice({
                     state.expense-=amount;
                  }              
             },
-            search: (state, action) => {
-                const searchValue = action.payload.toLowerCase();
-                state.history.sort((a, b) => {
-                    if (a.text.toLowerCase().startsWith(searchValue)) return -1; // Place matching items first
-                    if (b.text.toLowerCase().startsWith(searchValue)) return 1; // Place matching items first
-                    return 0;
-                });
-                
-            },
-           
         }
     }
 )
