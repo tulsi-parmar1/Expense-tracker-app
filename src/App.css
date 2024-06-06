@@ -63,3 +63,22 @@ input{
 .remove:hover{
   cursor: pointer;
 }
+.add 
+{
+  height:40px;
+  margin-top:30px;
+  width:300px;
+  background-color: #006769;
+  border:none;
+  border-radius:4px;
+}
+.add a{
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+}
+.add:hover{
+  cursor: pointer;
+}
