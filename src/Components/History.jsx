@@ -22,10 +22,13 @@ function History()
 
         return(
             <>
-               <button className="add"><Link to="/add">Add</Link></button>
+              
                <div className="history">
                <h1 style={{color:'#006769'}}>History</h1>
-               <input type="text" style={{width:'387px',marginBottom:'-10px'}} placeholder="Search item here..."  onChange={(e)=>handleSearchItem(e)}/>
+               <div style={{display:'flex',alignItem:'center',justifyContent:'center',gap:'10px'}}>
+               <input type="text" style={{width:'250px',marginBottom:'-10px'}} placeholder="Search item here..."  onChange={(e)=>handleSearchItem(e)}/>
+               <button className="add"><Link to="/add">Add</Link></button>
+               </div> 
                <div className="list">
                <HistoryList history={filteredHistory} />
                </div>  

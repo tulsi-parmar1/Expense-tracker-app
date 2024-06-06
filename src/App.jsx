@@ -9,9 +9,6 @@ function App() {
            <center>
            <h1 style={{color:'#006769'}}>Expense Tracker</h1>
            <hr />
-          {/* <Balance></Balance>
-           <IncomeExpense></IncomeExpense>
-           <History></History>  */}
            <Outlet></Outlet>
           </center>
     </>

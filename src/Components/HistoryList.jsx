@@ -11,9 +11,9 @@ function HistoryList({history})
                    <ul className="ul">
                    {history.map((item, index) => (
                     <li key={index}>
-                        {item.text}<span  className="space"></span>
-                        {item.amount > 0 && '+'}{item.amount}
-                        <button onClick={()=>handleremove(index)} className="remove">Remove</button>    
+                        <span>{item.text}</span>
+                        <span>{item.amount > 0 && '+'}{item.amount}</span>
+                        <span><button onClick={()=>handleremove(index)} className="remove">Remove</button></span>
                     </li>
                 ))}
                     </ul>
